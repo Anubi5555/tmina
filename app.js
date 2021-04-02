@@ -1,18 +1,32 @@
 const express = require("express");
+const passport = require("passport");
+const localStrategy = require("passport-local");
+const passportLocalMongoose = require("passport-local-mongoose");
 const app = express();
 const connectDB = require("./back/database");
 const gameroom = require("./back/gameroom");
 const event = require("./back/event");
+const user = require("./back/user");
 
 const port = 3000;
 
 app.listen(port, () => {
-    console.log(`Listening on port: ${port}`);
+    console.log("Listening on port: ${port}");
 });
 
 connectDB();
 app.use(express.json());
 app.use(express.static("front"));
+app.use(require("express-session")({
+    secret: "Rusty is the best og in the world",
+    resave: false,
+    saveUninitialized: false
+}));
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new localStrategy(user.authenticate()));
+passport.serializeUser(user.serializeUser());
+passport.deserializeUser(user.deserializeUser());
 
 //gameroom functions
 app.get("/api/gamerooms", async (req, res) => {
