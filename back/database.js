@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 
 async function connectDB() {
     try {
-        const url = "mongodb://localhost:27017/hakaton2021";
+        const url = "mongodb://localhost:27017/pinokio";
 
         const connection = await mongoose.connect(url, {
             useUnifiedTopology: true,
