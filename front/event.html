@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/igraonica.css" rel="stylesheet" type="text/css"/>
+
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <header class="site-header Navigation_Bar_Border" >
+      <div class="wrapper site-header__wrapper">
+        <a href="index.html"><img src="img/etmina-logo.png" alt="website icon" width="260" height="60"></a>
+        <nav class="nav">
+          <button class="nav__toggle" aria-expanded="false" type="button">
+            menu
+          </button>
+          <ul class="nav__wrapper">
+            <li class="nav__item"><a href="index.html" class="active underlineHover">Home</a></li>
+            <li class="nav__item"><a href="gamerooms.html" class="inactive underlineHover">Igraonice</a></li>
+            <li class="nav__item"><a href="events.html" class="inactive underlineHover">Events</a></li>
+            <li class="nav__item"><a href="log_in.html" class="inactive underlineHover">Log in</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+        <div class="container">
+            </br>
+            </br>
+            <div  class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-xs-12 col-lg-8">
+                    <table class="table-responsive">
+                        <tr id="name">
+                        </tr>
+                        <tr>
+                            <td><p>Informacije o eventu:</p></td>
+                        </tr>
+                        <tr id="organizer">
+                        </tr>
+                        <tr id="gameroom">
+                        </tr>
+                        <tr id="game">
+                        </tr>
+                        <tr id="price">
+                        </tr>
+                        <tr id="attendees">
+                        </tr>
+                        <tr id="prize">
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-lg-3">
+                    <div class="btn btn-three" style="margin-top: 100px;">
+                        <input type="button" class="btn btn-three" value="prijavi se" >
+                      </div>
+                </div>
+            </div>
+            <!-- <h3>Opis takmicenja:</h3>
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div id="opis" class="col-xs-12 col-lg-8">
+                </div>
+                <div class="col-lg-2"></div>
+            </div> -->
+            <!-- <button class="delete-event-button">Delete</button> -->
+        </div>
+        <footer>
+            <div>
+                <nav class="footer-nav">
+                    <a href="index.html">Home</a> |
+                    <a href="gamerooms.html">Igraonice</a> |
+                    <a href="events.html">Events</a> |
+                    <a href="log_in.html">Login</a> |
+                    <a href="mailto:info@tmina.org">Kontakt</a>
+                </nav>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	    <script src="event.js"></script>
+    </body>
+</html>

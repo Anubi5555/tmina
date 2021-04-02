@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang= "sr">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/signup.js "></script>
+  <link href="css/log_in.css" rel="stylesheet" type="text/css"/>
+  
+  <title>Log in to Esports website</title>
+</head>
+<body>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <a href="log_in.html"><h2 class="inactive underlineHover"> Log in </h2></a>
+    <a href="sign_up.html"><h2 class="active">Sign Up </h2></a>
+
+
+    <div class="fadeIn first">
+      <a href="index.html"><img src="img/etmina-logo.png" alt="website icon" class="site_logo" width="200px" height="46px" /></a>
+    </div>
+
+    <form form method="post" action="#" name="signup">
+      <input type="text" id="email" class="fadeIn first" name="signup" required placeholder="e-mail"></input>
+      <span role="alert" id="emailError" aria-hidden="true">Email mora da bude oblika 'example@company.com'!</span>
+      <input type="text" id="username" class="fadeIn second" maxlength="12" minlength="4" name="signup" required placeholder="username"></input>
+      <span role="alert" id="usernameError" aria-hidden="true">Username mora da ima izmedju 4 i 12 karaktera, mala i velika slova, brojevi!</span>
+      <input type="text" id="password" maxlength="18" minlength="6" class="fadeIn third" name="signup" required  placeholder="password"></input>
+      <span role="alert" id="passwordError" aria-hidden="true">Password mora imati izmedju 6 i 18 karaktera brojeva ili slova!</span>
+      <input type="text" id="confirm_password" maxlength="18" minlength="6"class="fadeIn fourth" name="signup"required placeholder="confirm password"></input>
+      <span role="alert" id="con_passwordError" aria-hidden="true">Passwordi nisu isti!</span>
+      <input type="submit" id="submit" class="fadeIn fourth" value="Sign up"></input>
+    </form>
+
+    <!-- <div id="formFooter"></div> -->
+
+  </div>
+</div>
+
+
+<footer>
+  <div>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a> |
+      <a href="gamerooms.html">Igraonice</a> |
+      <a href="events.html">Events</a> |
+      <a href="log_in.html">Login</a> |
+      <a href="mailto:info@tmina.org">Kontakt</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang= "sr">
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/login.js "></script>
+  <link href="css/log_in.css" rel="stylesheet" type="text/css"/>
+  
+  <title>Log in to Esports website</title>
+</head>
+<body>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+
+    <a href="log_in.html"><h2 class="active">Log in</h2></a>
+    <a href="sign_up.html"><h2 class="inactive underlineHover">Sign Up</h2></a>
+
+    <div class="fadeIn first">
+      <a href="index.html"><img src="img/etmina-logo.png" alt="website icon" class="site_logo" width="200px" height="46px" /></a>
+    </div>
+
+    <form form method="post" action="#" name="login">
+      <input type="text" id="username" class="fadeIn first" maxlength="12" minlength="4" name="login" required placeholder="username"></input>
+      <span role="alert" id="usernameError" aria-hidden="true">Username mora da ima izmedju 4 i 12 karaktera, mala i velika slova, brojevi!</span>
+      <input type="text" id="password" class="fadeIn second" maxlength="18" minlength="6" name="login" required  placeholder="password"></input>
+      <span role="alert" id="passwordError" aria-hidden="true">Password mora imati izmedju 6 i 18 karaktera brojeva ili slova!</span>
+      <input type="submit" id="submit" class="fadeIn third" value="Log In"></input>
+    </form>
+
+    
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Zaboravljen password</a>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <div>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a> |
+      <a href="gamerooms.html">Igraonice</a> |
+      <a href="events.html">Events</a> |
+      <a href="log_in.html">Login</a> |
+      <a href="mailto:info@tmina.org">Kontakt</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>

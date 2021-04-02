@@ -1,0 +1,153 @@
+
+[
+    {
+        "name": "PlayGround",
+        "img": "img/playground_pocetna.jpg",
+        "game": "img/csgo.jpg",
+        "hours": {
+            "mon": "00:00 - 00:00",
+            "tue": "00:00 - 00:00",
+            "wed": "00:00 - 00:00",
+            "thu": "00:00 - 00:00",
+            "fri": "00:00 - 00:00",
+            "sat": "00:00 - 00:00",
+            "sun": "00:00 - 00:00"
+        },
+        "prices":{
+            "one": "100",
+            "five": "400",
+            "ten": "750"
+        },
+        "contact": {
+        	"phone": "063 7030276",
+        	"email": "info@playground.rs"
+        },
+        "specs":{
+            "cpu": "Ryzen 3 2100x",
+            "gpu": "Nvidia GTX 1080",
+            "ram": "16GB"
+        },
+        "desc": "Lorem ipsum dolor sit amet.",
+        "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11233.951519757178!2d19.8488442!3d45.2581477!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb58e0830617e19cd!2sPlayground%20Gaming%20Center!5e0!3m2!1sen!2srs!4v1616533940987!5m2!1sen!2srs"
+    },
+    {
+        "name": "Kum",
+        "img": "img/Kum_pocetna.jpg",
+        "game": "img/pubg.jpg",
+        "hours": {
+            "mon": "00:00 - 00:00",
+            "tue": "00:00 - 00:00",
+            "wed": "00:00 - 00:00",
+            "thu": "00:00 - 00:00",
+            "fri": "00:00 - 00:00",
+            "sat": "00:00 - 00:00",
+            "sun": "00:00 - 00:00"
+        },
+        "prices":{
+            "one": "80",
+            "five": "260",
+            "ten": "480"
+        },
+        "contact":{
+            "phone": "021 6613407",
+            "email": "info@kum.rs"
+        },
+        "spec":{
+            "cpu": "i5 8600",
+            "gpu": "Nvidia GTX 1070 Ti",
+            "ram": "16GB"
+        },
+        "desc": "Lorem ipsum dolor sit amet.",
+        "map": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11234.036137426876!2d19.8464727!3d45.25772!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa881e5feba08ee84!2z0JrRg9C8!5e0!3m2!1sen!2srs!4v1616682602325!5m2!1sen!2srs"
+    },
+    {
+        "name": "GG",
+        "img": "img/gg_pocetna.jpg",
+        "game": "img/dota2.jpg",
+        "hours": {
+            "mon": "00:00 - 00:00",
+            "tue": "00:00 - 00:00",
+            "wed": "00:00 - 00:00",
+            "thu": "00:00 - 00:00",
+            "fri": "00:00 - 00:00",
+            "sat": "00:00 - 00:00",
+            "sun": "00:00 - 00:00"
+        },
+        "prices": {
+            "one": "100 rsd",
+            "five": "400 rsd",
+            "ten": "750 rsd"
+        },
+        "contact": {
+            "phone": "dodatiBroj",
+            "email": "dodatiEmail"
+        },
+        "specs": {
+            "cpu": "i5 7700k",
+            "gpu": "GTX 1060 6GB",
+            "ram": "16GB"
+        },
+        "desc": "Lorem ipsum dolor sit amet.",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.973285238119!2d19.834725315676483!3d45.248332979098876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b10401ca26a51%3A0xc33c4ac899d6d436!2sGood%20Game!5e0!3m2!1sen!2srs!4v1616683033307!5m2!1sen!2srs"
+    },
+    {
+        "name": "Mastal",
+        "img": "img/mastal_pocetna.jpg",
+        "game": "img/lol.png",
+        "hours": {
+            "mon": "00:00 - 00:00",
+            "tue": "00:00 - 00:00",
+            "wed": "00:00 - 00:00",
+            "thu": "00:00 - 00:00",
+            "fri": "00:00 - 00:00",
+            "sat": "00:00 - 00:00",
+            "sun": "00:00 - 00:00"
+        },
+        "prices":{
+            "one": "100",
+            "five": "420",
+            "ten": "780"
+        },
+        "contact": {
+        	"phone": "021 322761",
+        	"email": "info@mastal.rs"
+        },
+        "specs":{
+            "cpu": "i5 6400",
+            "gpu": "GTX 1050Ti 4GB",
+            "ram": "8GB"
+        },
+        "desc": "Lorem ipsum dolor sit amet.",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2808.1464407819863!2d19.80622861567703!3d45.26505047909912!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b118e593703bf%3A0x51c75be0f929eef1!2sMASTAL%20IGRAONICA%20NAJBOLJA%20U%20GRAFU!5e0!3m2!1sen!2srs!4v1616682950499!5m2!1sen!2srs"
+    },
+    {
+        "name": "X3M",
+        "img": "img/x3m_pocetna.jpg",
+        "game": "img/gtav.jpg",
+        "hours": {
+            "mon": "07:00 - 00:00",
+            "tue": "07:00 - 00:00",
+            "wed": "07:00 - 00:00",
+            "thu": "07:00 - 00:00",
+            "fri": "07:00 - 00:00",
+            "sat": "07:00 - 00:00",
+            "sun": "07:00 - 00:00"
+        },
+        "prices":{
+            "one": "120",
+            "five": "500",
+            "ten": "850"
+        },
+        "contact": {
+        	"phone": "063 7029409",
+        	"email": "info@x3m.rs"
+        },
+        "specs":{
+            "cpu": "Ryzen 5 3600",
+            "gpu": "GTX 1070",
+            "ram": "16GB"
+        },
+        "desc": "Lorem ipsum dolor sit amet.",
+        "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11233.680905200628!2d19.819829269775386!3d45.25951550000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b104fcaba534d%3A0x963b36530eb93efa!2sX3M%20Igraonica!5e0!3m2!1sen!2srs!4v1616683102195!5m2!1sen!2srs"
+    }
+]
