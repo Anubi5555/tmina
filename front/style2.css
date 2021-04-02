@@ -1,12 +1,18 @@
 html, body{
-background-color: #181818;
+background-color: rgb(4,4,4);
 }
 nav{
-	background-color: #212121;
-
+	background-color: rgb(85,85,85);
+}
+.desc{
+	color: #ccc;
+	font-size: 20px;
+}
+.select_description{
+	padding-bottom: 20px;
 }
 .nav_color{
-	background-color: #212121;
+	background-color: rgb(85,85,85);
 }
 .title{
 	color: #ccc;
@@ -17,17 +23,31 @@ nav{
 }
 
 .input_box{
-	background-color: #363636;
-	border-color: #363636
+	background-color: rgb(85,85,85);
+	border-color: rgb(85,85,85);
+	margin-bottom:30px;
 	
+}
+.input_text:{
+	align-content: center;
+	align-self: center;
+	width: 500px;
 }
 .input_box:hover{
 	
-	border-color: #363636
+	border-color: rgb(85,85,85);
 	
+}
+select{
+	background-color: #363636;
+	color: #363636;
+}
+.input, .select select, .textarea{
+
+	background-color: #ccc;
 }
 
 input::-moz-placeholder{
-	opacity: 0.8;
-	color: #ccc;
+	opacity: 1;
+	color: #fff;
 }
