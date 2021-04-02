@@ -37,10 +37,11 @@ function RenderCards(events) {
 function CreateCard(event) {
 
     let card = `
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
       <div event-id=${event._id} data-role="tile" id="tile" data-size="large"  style="background-color:#242526; border-color: #242526;">
         <h2>${event.name}</h2>
         <button class="info-button"><h2 class="go">idi na event</h2></button>
-        <button class="delete-button">Delete</button>
+        <button class="deletes">Delete</button>
       </div>`;
 
     return card;
