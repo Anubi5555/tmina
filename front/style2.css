@@ -1,0 +1,33 @@
+html, body{
+background-color: #181818;
+}
+nav{
+	background-color: #212121;
+
+}
+.nav_color{
+	background-color: #212121;
+}
+.title{
+	color: #ccc;
+	text-align: center;
+}
+.subtitle{
+	color: #ccc;
+}
+
+.input_box{
+	background-color: #363636;
+	border-color: #363636
+	
+}
+.input_box:hover{
+	
+	border-color: #363636
+	
+}
+
+input::-moz-placeholder{
+	opacity: 0.8;
+	color: #ccc;
+}
