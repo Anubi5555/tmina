@@ -1,16 +1,12 @@
 {
-    "name": "hakaton2021",
+    "name": "tmina",
     "version": "1.0.0",
-    "description": "hakaton2021",
+    "description": "tmina",
     "main": "app.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
     "author": "Tmina",
-    "license": "ISC",
+    "license": "GPLv3",
     "dependencies": {
         "express": "^4.17.1",
-        "mongoose": "^5.12.1",
-        "nodemon": "^2.0.7"
+        "mongoose": "^5.12.1"
     }
 }
