@@ -8,7 +8,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/signup.js "></script>
   <link href="css/log_in.css" rel="stylesheet" type="text/css"/>
-  
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
   <title>Log in to Esports website</title>
 </head>
 <body>
@@ -31,6 +31,16 @@
       <span role="alert" id="passwordError" aria-hidden="true">Password mora imati izmedju 6 i 18 karaktera brojeva ili slova!</span>
       <input type="text" id="confirm_password" maxlength="18" minlength="6"class="fadeIn fourth" name="signup"required placeholder="confirm password"></input>
       <span role="alert" id="con_passwordError" aria-hidden="true">Passwordi nisu isti!</span>
+      <div class="control">
+        <label class="radio">
+          <input type="radio" name="answer">
+          Instruktor
+        </label>
+        <label class="radio">
+          <input type="radio" name="answer">
+          Korisnik
+        </label>
+      </div>
       <input type="submit" id="submit" class="fadeIn fourth" value="Sign up"></input>
     </form>
 
