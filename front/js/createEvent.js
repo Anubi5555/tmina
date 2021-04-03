@@ -3,14 +3,14 @@ addButton.addEventListener("click", GetInput);
 
 async function GetInput() {
     const nameInput = document.querySelector("#name-input");
-    // const organizerInput = await axios.get("api/getUser", user);
+    const organizerInput = document.querySelector("#organizer-input");
     const radionica = document.querySelector("#radionica");
-    const gameroomInput = document.querySelector("#gameroomChoose");
+    const gameroomInput = document.querySelector("#gameroom-input");
     //const attendeesInput = document.querySelector("#attendees-input");
     const descInput = document.querySelector("#desc-input");
 
     const name = nameInput.value;
-    //const organizer = organizerInput.body.username;
+    const organizer = organizerInput.value;
     let type;
     if(radionica.value)
         type="radionica";
@@ -22,7 +22,7 @@ async function GetInput() {
 
     let event = {
         name: name,
-        //organizer: organizer,
+        organizer: organizer,
         type: type,
         gameroom: gameroom,
         //attendees: attendees,
