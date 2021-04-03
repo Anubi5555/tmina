@@ -3,17 +3,17 @@ GetData();
 async function GetData() {
     try {
         let gamerooms = await axios.get("/api/gamerooms");
-        RenderCarousel(gamerooms.data.gamerooms);
+        RenderNavbar(gamerooms.data.gamerooms);
     } catch (err) {
         console.log(err);
     }
 }
 
-function RenderCarousel(gamerooms) {
-    const carousel = document.querySelector("#carousel");
-    let carousels = "";
+function RenderNavbar(gamerooms) {
+    const navbar = document.querySelector(".navbar-dropdown");
+    let navbars = "";
     gamerooms.forEach((gameroom) => {
-        carousels += `<div class="carousel-cell"></div>`;
+        navbars += `<a href="gameroom.html?id=${gameroom._id}" class="navbar-item">${gameroom.name}</a><br/>`;
     });
-    carousel.innerHTML = carousels;
+    navbar.innerHTML = navbars;
 }
