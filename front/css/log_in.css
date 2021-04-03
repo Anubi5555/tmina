@@ -3,7 +3,7 @@
 /* BASIC */
 
 html {
-  background-color: #181818;
+  background-color: rgb(4,4,4);
 }
 
 body {
@@ -74,7 +74,7 @@ h2.inactive {
 
 h2.active {
   color: #cccccc;
-  border-bottom: 2px solid #ceeb35 ;
+  border-bottom: 2px solid rgb(113, 230, 250) ;
 }
 
 
@@ -232,7 +232,7 @@ input[type=text]:placeholder {
   bottom: -10px;
   width: 0;
   height: 2px;
-  background-color: #ceeb35;
+  background-color: rgb(113, 230, 250) ;
   content: "";
   transition: width 0.2s;
 }
@@ -302,28 +302,27 @@ input.invalid {
 
 /* ======== Footer ======== */
 footer {
-  background-color: #242527;
+	background-color: #121212;
   height: 110px;
-  padding: 30px;
-  margin-top: 60px;
-  color: #aaaaaa;
-  font-size: 12px;
-  text-align: center;
-  }
+	padding: 30px;
+	margin-top: 60px;
+	font-size: 12px;
+	text-align: center;
+	}
 footer a {
-  text-decoration: none;
-  color: #cccccc;
+	text-decoration: none;
+	color: #a5a5a5;;
 }
 footer a:hover {
-  text-decoration: none;
-  color: #ececec;
+	text-decoration: none;
+	color: #ccc;
 }
 .footer-nav {
-  padding-top: 20px;
+	padding-top: 20px;
 }
 .footer-nav a {
-  color: #cccccc;
-  font-size: 14px;
+	color: #a5a5a5;
+	font-size: 14px;
 }
 
 /* ======== End Footer ======== */
