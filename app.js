@@ -42,7 +42,7 @@ app.post("/api/register", async (req, res) => {
             username: username,
             role: role
         });
-        user.register(newUser, password, function(err, user){
+        user.register(newUser, password, function(err, User){
             if(err){
                 console.log(err);
             }
@@ -59,10 +59,10 @@ app.post("/api/register", async (req, res) => {
     }
 });
 app.post("/api/login", passport.authenticate("local",{
-    successRedirect:"/index.html",
-    failureRedirect:"/mrs.html"
+    successRedirect:"/ok.html",
+    failureRedirect:"/njtf.html"
 }), async (req, res) => {
-    res.send("User is "+ req.user.id);
+    res.send("Cool");
 });
 app.get("/api/logout", function(req, res){
     req.logout();

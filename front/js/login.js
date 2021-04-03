@@ -1,8 +1,5 @@
-const passport = require("passport");
-
 $(document).ready(function(){
   
-
   function validateName(name) {
     const re = new RegExp('([a-zA-Z]+[_1-9]*[a-zA-Z]*){4,12}');
     return re.test(name);
@@ -22,6 +19,7 @@ $(document).ready(function(){
     const passwordError = document.getElementById("passwordError");
 
     let valid=true;
+
     if (validateName(username)) {
       usernameError.classList.remove("visible");
       usernameError.classList.add("hidden");
@@ -47,7 +45,7 @@ $(document).ready(function(){
       passwordError.setAttribute("aria-invalid", true);
       valid=false;
     }
-    if(valid) {
+    if (valid) {
       login(username, password);
       return true;
     }
@@ -65,10 +63,13 @@ async function login(username, password) {
       password: password
   };
 
+  let newUser;
+
   try {
-    await axios.post("api/login", user);
+    newUser = await axios.post("api/login", user);
+    window.location.href = "createEventOld.html";
   } catch (err) {
-      console.log(err);
-      window.location.href = "oops.html";
+    console.log(err);
+    window.location.href = "createEvent.html";
   }
 };
