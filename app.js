@@ -30,31 +30,26 @@ passport.serializeUser(user.serializeUser());
 passport.deserializeUser(user.deserializeUser());
 
 //login and register functions
-/* app.post("/api/register", function(req, res){
-    user.register(new user({email:req.body.email,username:req.body.username,role:req.body.role}),req.body.password, function(err, user){
-           if(err){
-                console.log(err);
-            }
-            passport.authenticate("local")(req, res, function(){
-                res.redirect("/secret");
-           }); 
-        });
-    }); */
 app.post("/api/register", async (req, res) => {
     try {
         const email = req.body.email;
         const username = req.body.username;
         const password = req.body.password;
+        const role = req.body.role;
 
         const newUser = new user({
             email: email,
             username: username,
-            password: password
+            role: role
         });
-        const savedUser = await newUser.save();
+        user.register(newUser, password, function(err, user){
+            if(err){
+                console.log(err);
+            }
+            passport.authenticate("local");
+        });
         res.json({
-            success: true,
-            user: savedUser
+            success: true
         });
     } catch (err) {
         res.status(404).json({
@@ -63,9 +58,9 @@ app.post("/api/register", async (req, res) => {
         });
     }
 });
-/*app.post("/api/login", passport.authenticate("local",{
+app.post("/api/login", passport.authenticate("local",{
     successRedirect:"/index.html",
-    failureRedirect:"/login.html"
+    failureRedirect:"/log_in.html"
 }),function(req, res){
     res.send("User is "+ req.user.id);
 });
@@ -77,8 +72,8 @@ function isLoggedIn(req, res, next){
     if(req.isAuthenticated()){
         return next();
     }
-    res.redirect("/login.html");
-};*/
+    res.redirect("/log_in.html");
+};
 
 //gameroom functions
 app.get("/api/gamerooms", async (req, res) => {

@@ -83,7 +83,7 @@ $(document).ready(function(){
       valid=false;
     }
     if (valid) {
-      GetInput();
+      GetInput(email, username, password);
       return true;
     }
     else
@@ -92,28 +92,28 @@ $(document).ready(function(){
   $("#submit").on("click", validate);
 });
 
-async function GetInput() {
-  const emailInput = document.querySelector("#email");
-  const usernameInput = document.querySelector("#username");
-  const passwordInput = document.querySelector("#password");
-
-  const email = emailInput.value;
-  const username = usernameInput.value;
-  const password = passwordInput.value;
+async function GetInput(email, username, password) {
+  const predavacInput = document.querySelector("#predavac");
+  const predavac = predavacInput.value;
+  let role;
+  if(predavac)
+    role="predavac";
+  else
+    role="korisnik";
 
   let user = {
       email: email,
       username: username,
-      password: password
+      password: password,
+      role: role
   };
 
   let newUser;
 
   try {
     newUser = await axios.post("api/register", user);
-    window.location.href = "USPEH.html";
   } catch (err) {
       console.log(err);
-      window.location.href = "index.html";
   }
-}
+  window.location.href = "index.html";
+};

@@ -22,10 +22,10 @@
       <a href="index.html"><img src="img/etmina-logo.png" alt="website icon" class="site_logo" width="200px" height="46px" /></a>
     </div>
 
-    <form form method="post" action="#" name="login">
-      <input type="text" id="username" class="fadeIn first" maxlength="12" minlength="4" name="login" required placeholder="username"></input>
+    <form method="POST" action="api/login">
+      <input type="text" id="username" class="fadeIn first" maxlength="12" minlength="4" name="username" required placeholder="username"></input>
       <span role="alert" id="usernameError" aria-hidden="true">Username mora da ima izmedju 4 i 12 karaktera, mala i velika slova, brojevi!</span>
-      <input type="text" id="password" class="fadeIn second" maxlength="18" minlength="6" name="login" required  placeholder="password"></input>
+      <input type="password" id="password" class="fadeIn second" maxlength="18" minlength="6" name="password" required  placeholder="password"></input>
       <span role="alert" id="passwordError" aria-hidden="true">Password mora imati izmedju 6 i 18 karaktera brojeva ili slova!</span>
       <input type="submit" id="submit" class="fadeIn third" value="Log In"></input>
     </form>

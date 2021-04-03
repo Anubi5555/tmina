@@ -23,7 +23,7 @@
       <a href="index.html"><img src="img/etmina-logo.png" alt="website icon" class="site_logo" width="200px" height="46px" /></a>
     </div>
 
-    <form>
+    <div>
       <input type="text" id="email" class="fadeIn first" required placeholder="e-mail"></input>
       <span role="alert" id="emailError" aria-hidden="true">Email mora da bude oblika 'example@company.com'!</span>
       <input type="text" id="username" class="fadeIn second" maxlength="12" minlength="4" required placeholder="username"></input>
@@ -32,18 +32,18 @@
       <span role="alert" id="passwordError" aria-hidden="true">Password mora imati izmedju 6 i 18 karaktera brojeva ili slova!</span>
       <input type="password" id="confirm_password" maxlength="18" minlength="6" class="fadeIn fourth" required placeholder="confirm password"></input>
       <span role="alert" id="con_passwordError" aria-hidden="true">Passwordi nisu isti!</span>
-      <!-- <div class="control ">
+      <div class="control">
         <label class="radio">
-          <input class="fadeIn" type="radio" name="role" value="predavac">
+          <input id="predavac" class="fadeIn" type="radio" name="role">
           Predavac
         </label>
         <label class="radio">
-          <input class="fadeIn" type="radio" name="role" value="korisnik">
+          <input id="korisnik" class="fadeIn" type="radio" name="role">
           Korisnik
         </label>
-      </div> -->
+      </div>
       <input type="submit" id="submit" class="fadeIn fourth" value="Sign up"></input>
-    </form>
+    </div>
 
     <!-- <div id="formFooter"></div> -->
 

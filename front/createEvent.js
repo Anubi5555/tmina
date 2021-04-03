@@ -36,7 +36,7 @@ async function GetInput() {
     let newEvent;
 
     try {
-        newEvent = await axios.post("/api/events", event);
+        newEvent = await axios.post("api/events", event);
     } catch (err) {
         console.log(err);
     }
