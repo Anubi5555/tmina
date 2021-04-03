@@ -37,6 +37,7 @@ function RenderCards(events) {
 function CreateCard(event) {
 
     let card = `
+    
     <div class="row">
     <div class="col s12 m7">
       <div class="card">
