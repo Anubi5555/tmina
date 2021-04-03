@@ -2,7 +2,6 @@
     {
         "name": "PlayGround",
         "img": "img/playground_pocetna.jpg",
-        "game": "img/csgo.jpg",
         "hours": {
             "mon": "00:00 - 00:00",
             "tue": "00:00 - 00:00",
@@ -31,8 +30,7 @@
     },
     {
         "name": "Kum",
-        "img": "img/Kum_pocetna.jpg",
-        "game": "img/pubg.jpg",
+        "img": "img/kum_pocetna.png",
         "hours": {
             "mon": "00:00 - 00:00",
             "tue": "00:00 - 00:00",
@@ -62,7 +60,6 @@
     {
         "name": "GG",
         "img": "img/gg_pocetna.jpg",
-        "game": "img/dota2.jpg",
         "hours": {
             "mon": "00:00 - 00:00",
             "tue": "00:00 - 00:00",
@@ -92,7 +89,6 @@
     {
         "name": "Mastal",
         "img": "img/mastal_pocetna.jpg",
-        "game": "img/lol.png",
         "hours": {
             "mon": "00:00 - 00:00",
             "tue": "00:00 - 00:00",
@@ -122,7 +118,6 @@
     {
         "name": "X3M",
         "img": "img/x3m_pocetna.jpg",
-        "game": "img/gtav.jpg",
         "hours": {
             "mon": "07:00 - 00:00",
             "tue": "07:00 - 00:00",
