@@ -1,7 +1,7 @@
 [
     {
         "name": "PlayGround",
-        "img": "img/playground_pocetna.jpg",
+        "img": "img/playground.png",
         "hours": {
             "mon": "00:00 - 00:00",
             "tue": "00:00 - 00:00",
@@ -30,7 +30,7 @@
     },
     {
         "name": "Kum",
-        "img": "img/kum_pocetna.png",
+        "img": "img/kum.png",
         "hours": {
             "mon": "00:00 - 00:00",
             "tue": "00:00 - 00:00",
@@ -59,7 +59,7 @@
     },
     {
         "name": "GG",
-        "img": "img/gg_pocetna.jpg",
+        "img": "img/gg.png",
         "hours": {
             "mon": "00:00 - 00:00",
             "tue": "00:00 - 00:00",
@@ -88,7 +88,7 @@
     },
     {
         "name": "Mastal",
-        "img": "img/mastal_pocetna.jpg",
+        "img": "img/mastal.png",
         "hours": {
             "mon": "00:00 - 00:00",
             "tue": "00:00 - 00:00",
@@ -117,7 +117,7 @@
     },
     {
         "name": "X3M",
-        "img": "img/x3m_pocetna.jpg",
+        "img": "img/x3m.png",
         "hours": {
             "mon": "07:00 - 00:00",
             "tue": "07:00 - 00:00",
