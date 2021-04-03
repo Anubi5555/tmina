@@ -11,7 +11,7 @@
     <nav class="navbar is-dark nav_color" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a class="navbar-item" href="">
-      <img src="" width="112" height="28">
+      <img src="img/logo/pinokio-logo-text-desno.png" width="112" height="28">
     </a>
 
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -73,6 +73,7 @@
     </div>
   </div>
 </nav>
+<div style="background-image: url('img/background.png');width: 100%;">
   <section class="section">
     <div class="container">
       <h1 class="title" >
@@ -98,15 +99,16 @@
         <div class="column">
         </div>
         <div class="column">
-          <div class="select">
-            <label class="label">Vrsta</label>
-        <select class="dropdown_chose" id="type">
-          <option  id="0" value="Vrsta">Vrsta</option>
-          <option  id="1" value="takmicenje">takmičenje</option>
-          <option  id="2" value="radionica">radionica</option>
-        </select>
+          <div class="control">
+            <label class="radio">
+              <input type="radio" name="answer" id="Radionica">
+              Radionica
+            </label>
+            <label class="radio">
+              <input type="radio" name="answer" id="Takmicenje">
+              Takmičenje
+            </label>
           </div>
-        
           <div class="select">
             <label class="label">Igraonica</label>
         <select >
@@ -186,22 +188,27 @@
     </form>
     </div>
   </section>
+  </div>
+  <footer>
+    <div>
+        <nav class="footer-nav">
+            <a href="index.html">Home</a> |
+            <a href="gamerooms.html">Igraonice</a> |
+            <a href="events.html">Events</a> |
+            <a href="log_in.html">Login</a> |
+            <a href="mailto:info@tmina.org">Kontakt</a>
+        </nav>
+    </div>
+</footer>
   <script>
-    var ddl = document.getElementById("type");
-    var selectedValue = ddl.options[ddl.selectedIndex].value;
-    if (selectedValue == "Vrsta")
-    {
-        let div = document.getElementById("theme");
-        div.addAttribute("hidden");
-        let div = document.getElementById("game");
-        div.addAttribute("hidden");
-    }
-    if (selectedValue== "radionica")
+    var rad = document.getElementById("Radionica");
+    var tak = document.getElementById("Takmicenje");
+    if (rad.checked)
     {
         let div = document.getElementById("theme");
         div.removeAttribute("hidden");
     }
-    if (selectedValue == "takmicenje")
+    if (tak.checked)
     {
       let div = document.getElementById('game');
         div.removeAttribute("hidden");

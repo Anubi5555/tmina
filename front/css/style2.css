@@ -97,3 +97,9 @@ footer a:hover {
 	color: #a5a5a5;
 	font-size: 14px;
 }
+.radio{
+	color: #a5a5a5;
+}
+.radio:hover{
+	color:#fff;
+}
