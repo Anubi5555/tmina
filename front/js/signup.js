@@ -11,7 +11,7 @@ $(document).ready(function(){
   }
 
   function validatePassword(password) {
-    const re = new RegExp('([a-zA-Z]+[1-9]*[a-zA-Z]*){6,18}');
+    const re = new RegExp('([a-zA-Z]*[1-9]*[a-zA-Z]*){6,18}');
     return re.test(password);
   }
 
@@ -62,7 +62,6 @@ $(document).ready(function(){
       passwordError.classList.add("hidden");
       passwordError.setAttribute("aria-hidden", true);
       passwordError.setAttribute("aria-invalid", false);
-      valid=false;
     } else {
       passwordError.classList.remove("hidden");
       passwordError.classList.add("visible");
@@ -84,7 +83,7 @@ $(document).ready(function(){
       valid=false;
     }
     if (valid) {
-      GetInput(email, username, password);
+      register(email, username, password);
       return true;
     }
     else
@@ -93,7 +92,7 @@ $(document).ready(function(){
   $("#submit").on("click", validate);
 });
 
-async function GetInput(email, username, password) {
+async function register(email, username, password) {
   const predavacInput = document.querySelector("#predavac");
   const predavac = predavacInput.value;
   let role;

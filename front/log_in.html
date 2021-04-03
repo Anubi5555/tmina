@@ -9,7 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="js/login.js "></script>
   <link href="css/log_in.css" rel="stylesheet" type="text/css"/>
-  
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
   <title>Log in to Esports website</title>
 </head>
 <body>
@@ -23,18 +23,18 @@
       <a href="index.html"><img src="img/etmina-logo.png" alt="website icon" class="site_logo" width="200px" height="46px" /></a>
     </div>
 
-    <form method="post" action="api/login">
-      <input type="text" id="username" class="fadeIn first" maxlength="12" minlength="4" name="username" required placeholder="username"></input>
+    <div>
+      <input type="text" id="username" class="fadeIn first" maxlength="12" minlength="4" required placeholder="username"></input>
       <span role="alert" id="usernameError" aria-hidden="true">Username mora da ima izmedju 4 i 12 karaktera, mala i velika slova, brojevi!</span>
-      <input type="password" id="password" class="fadeIn second" maxlength="18" minlength="6" name="password" required  placeholder="password"></input>
+      <input type="password" id="password" class="fadeIn second" maxlength="18" minlength="6" required  placeholder="password"></input>
       <span role="alert" id="passwordError" aria-hidden="true">Password mora imati izmedju 6 i 18 karaktera brojeva ili slova!</span>
-      <input type="submit" id="submit" class="fadeIn third" value="Log In"></input>
-    </form>
+      <input type="submit" id="submit" class="fadeIn third" value="Log in"></input>
+    </div>
 
     
-    <div id="formFooter">
+    <!-- <div id="formFooter">
       <a class="underlineHover" href="#">Zaboravljen password</a>
-    </div>
+    </div> -->
 
   </div>
 </div>

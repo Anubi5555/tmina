@@ -1,3 +1,5 @@
+const passport = require("passport");
+
 $(document).ready(function(){
   
 
@@ -19,13 +21,12 @@ $(document).ready(function(){
     const password = $("#password").val();
     const passwordError = document.getElementById("passwordError");
 
-
+    let valid=true;
     if (validateName(username)) {
       usernameError.classList.remove("visible");
       usernameError.classList.add("hidden");
       usernameError.setAttribute("aria-hidden", true);
       usernameError.setAttribute("aria-invalid", false);
-      valid=true;
     } else {
       usernameError.classList.remove("hidden");
       usernameError.classList.add("visible");
@@ -39,7 +40,6 @@ $(document).ready(function(){
       passwordError.classList.add("hidden");
       passwordError.setAttribute("aria-hidden", true);
       passwordError.setAttribute("aria-invalid", false);
-      valid=true;
     } else {
       passwordError.classList.remove("hidden");
       passwordError.classList.add("visible");
@@ -47,13 +47,28 @@ $(document).ready(function(){
       passwordError.setAttribute("aria-invalid", true);
       valid=false;
     }
-
-    return false;
+    if(valid) {
+      login(username, password);
+      return true;
+    }
+    else
+      return false;
   }
 
   $("#submit").on("click", validate);
 
 });
 
+async function login(username, password) {
+  let user = {
+      username: username,
+      password: password
+  };
 
-
+  try {
+    await axios.post("api/login", user);
+  } catch (err) {
+      console.log(err);
+      window.location.href = "oops.html";
+  }
+};

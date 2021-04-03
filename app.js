@@ -60,8 +60,8 @@ app.post("/api/register", async (req, res) => {
 });
 app.post("/api/login", passport.authenticate("local",{
     successRedirect:"/index.html",
-    failureRedirect:"/log_in.html"
-}),function(req, res){
+    failureRedirect:"/mrs.html"
+}), async (req, res) => {
     res.send("User is "+ req.user.id);
 });
 app.get("/api/logout", function(req, res){
