@@ -20,7 +20,7 @@ async function GetData() {
 
 function RenderInfo(event) {
     const name = document.querySelector("#name");
-    name.innerHTML = `<h1>${event.name}</h1>`;
+    name.innerHTML = `<td><p><b>${event.name}</b></p></td>`;
 
     const organizator = document.querySelector("#organizer");
     organizator.innerHTML = `<td><p>Organizator:</p></td><td><p>${event.info.organizer}</p></td>`;

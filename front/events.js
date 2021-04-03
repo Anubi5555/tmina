@@ -37,16 +37,16 @@ function RenderCards(events) {
 function CreateCard(event) {
 
     let card = `
-        <div event-id=${event._id} data-role="tile" id="tile" data-size="large"  style="background-color:#242526; border-color: #242526;">
-			<h1 class="title">${event.name}</h1>
-			<button class="button info-button is-info is-focused" style="background-color:rgb(113,230,250); margin-top: 50%">Informacije</button>
-			<button class="button delete-button is-danger is-outlined" style="margin-top: 50%;">
-				<span>Obrisi</span>
-				<span class="icon is-small">
-				<i class="fas fa-times"></i>
-				</span>
-			</button>
-		</div>
+    <div event-id=${event._id} data-role="tile" id="tile" data-size="large"  style="background-color:#242526; border-color: #242526;">
+    <h1 class="title">${event.name}</h1>
+    <button class="button info-button is-info is-focused" style="background-color:rgb(113,230,250); margin-top: 50%; margin-right: 10%;">Informacije</button>
+    <button class="button delete-button is-danger is-outlined" style="margin-top: 50%; color: rgb(85, 29, 223);background-color:rgb(85, 29, 223);border-color:transparent;color:#fff">
+        <span>Obrisi</span>
+        <span class="icon is-small">
+        <i class="fas fa-times"></i>
+        </span>
+    </button>
+</div>
     `;
 
     return card;
