@@ -4,33 +4,29 @@ addButton.addEventListener("click", GetInput);
 async function GetInput() {
     const nameInput = document.querySelector("#name-input");
     const organizerInput = document.querySelector("#organizer-input");
+    const radionica = document.querySelector("#radionica");
     const gameroomInput = document.querySelector("#gameroom-input");
-    const gameInput = document.querySelector("#game-input");
-    const priceInput = document.querySelector("#price-input");
-    const attendeesInput = document.querySelector("#attendees-input");
-    const prizeInput = document.querySelector("#prize-input");
-    //const descInput = document.querySelector("#desc-input");
+    //const attendeesInput = document.querySelector("#attendees-input");
+    const descInput = document.querySelector("#desc-input");
 
     const name = nameInput.value;
     const organizer = organizerInput.value;
+    let type;
+    if(radionica.value)
+        type="radionica";
+    else
+        type="takmicenje";
     const gameroom = gameroomInput.value;
-    const game = gameInput.value;
-    const price = priceInput.value;
-    const attendees = attendeesInput.value;
-    const prize = prizeInput.value;
-    //const desc = descInput.value;
+    //const attendees = attendeesInput.value;
+    const desc = descInput.value;
 
     let event = {
         name: name,
-        info: {
-            organizer: organizer,
-            gameroom: gameroom,
-            game: game,
-            price: price,
-            attendees: attendees,
-            prize: prize
-        },
-        //desc: desc
+        organizer: organizer,
+        type: type,
+        gameroom: gameroom,
+        //attendees: attendees,
+        desc: desc
     };
 
     let newEvent;

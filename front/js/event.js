@@ -23,25 +23,19 @@ function RenderInfo(event) {
     name.innerHTML = `<td><p style="margin-left: 60%;"><b>${event.name}</b></p></td><td></td>`;
 
     const organizator = document.querySelector("#organizer");
-    organizator.innerHTML = `<td><p>Organizator:</p></td><td><p>${event.info.organizer}</p></td>`;
+    organizator.innerHTML = `<td><p>Organizator:</p></td><td><p>${event.organizer}</p></td>`;
+
+    const type = document.querySelector("#type");
+    type.innerHTML = `<td><p>Igra:</p></td><td><p>${event.type}</p></td>`;
 
     const gameroom = document.querySelector("#gameroom");
-    gameroom.innerHTML = `<td><p>Mesto:</p></td><td><p>${event.info.gameroom}</p></td>`;
+    gameroom.innerHTML = `<td><p>Mesto:</p></td><td><p>${event.gameroom}</p></td>`;
 
-    const game = document.querySelector("#game");
-    game.innerHTML = `<td><p>Igra:</p></td><td><p>${event.info.game}</p></td>`;
+    /* const attendees = document.querySelector("#attendees");
+    attendees.innerHTML = `<td><p>Broj ucesnika:</p></td><td><p>${event.info.attendees}</p></td>`; */
 
-    const price = document.querySelector("#price");
-    price.innerHTML = `<td><p>Cena ucesca</p></td><td><p>${event.info.price}</p></td>`;
-
-    const attendees = document.querySelector("#attendees");
-    attendees.innerHTML = `<td><p>Broj ucesnika:</p></td><td><p>${event.info.attendees}</p></td>`;
-
-    const prize = document.querySelector("#prize");
-    prize.innerHTML = `<td><p>Nagrada:</p></td><td><p>${event.info.prize}</p></td>`;
-
-    /* const desc = document.querySelector("#desc");
-    desc.innerHTML = `<p style="text-align: center;">${event.desc}</p>`; */
+    const desc = document.querySelector("#desc");
+    desc.innerHTML = `<p style="text-align: center;">${event.desc}</p>`;
 }
 
 async function DeleteData(id) {

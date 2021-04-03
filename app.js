@@ -20,7 +20,7 @@ app.use(require("express-session")({
     secret: "Destruktor je prosao i ostavio samo tminu",
     resave: false,
     saveUninitialized: false,
-    cookie: { secure: true }
+    cookie: { secure: false }
 }));
 app.use(passport.initialize());
 app.use(passport.session());
@@ -64,6 +64,8 @@ app.post("/api/login", async (req, res) => {
 
         const User = await user.authenticate()(username, password);
 
+        req.session.user = User;
+
         res.json({
             success: true,
             user: User
@@ -74,6 +76,10 @@ app.post("/api/login", async (req, res) => {
             message: err.message
         });
     }
+});
+app.get("/check-session", (req,res,next) => {
+    console.log.apply(req.session);
+    res.json({user: req.session.user});
 });
 /*app.get("/api/logout", function(req, res){
     req.logout();

@@ -1,175 +1,170 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Pinokio</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
-    <link rel="stylesheet" href="css/style2.css">
-  </head>
-  <body >
-    <nav class="navbar is-dark nav_color" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="index.html">
-          <img src="img/logo/pinokio-logo-text-desno.png" width="112" height="28">
-        </a>
-  
-        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-  
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a href="index.html" class="navbar-item">
-            Home
-          </a>
-  
-          <a href="events.html" class="navbar-item">
-            Events
-          </a>
-  
-          <div class="navbar-item is-dark has-dropdown is-hoverable ">
-            <a class="navbar-link">
-              Gamerooms
-            </a>
-  
-            <div class="navbar-dropdown">
-            </div>
-          </div>
-        </div>
-  
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a href="sign_up.html" class="button is-dark">
-                <strong>Sign up</strong>
-              </a>
-              <a href="log_in.html" class="button is-dark">
-                Log in
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-<div >
-  <section class="section">
-    <div class="container">
-      <h1 class="title" >
-      Napravi događaj
-      </h1>
-      <form>
-      <div class="columns">
-        <div class="column">
-        </div>
-        <div class="column">
-        <div class="field">
-        <label class="label">Naziv</label>
-        <div class="control">
-        <input class="input" type="text" placeholder="Naziv">
-        </div>
-      </div>
-      </div>
-      <div class="column">
-      </div>
-      </div>
 
-      <div class="columns chose">
-        <div class="column">
-        </div>
-        <div class="column">
-          <div class="control">
-            <label class="radio" style="margin-bottom: 20px;">
-              <input type="radio" name="answer" id="Radionica">
-              Radionica
-            </label>
-            <label class="radio">
-              <input type="radio" name="answer" id="Takmicenje">
-              Takmičenje
-            </label>
-          </div>
-          <div class="select">
-            <label class="label">Igraonica</label>
-        <select >
-          <option value="Igraonica">Igraonica</option>
-          <option value="Igraonica1">Igraonica1</option>
-          <option value="Igraonica2">Igraonica2</option>
-          <option value="Igraonica3">Igraonica3</option>
-          <option value="Igraonica4">Igraonica4</option>
-          <option value="Igraonica5">Igraonica5</option>
-          <option value="Igraonica6">Igraonica6</option>
-        </select>
-          </div>
-        </div>
-        <div class="column">
-        </div>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pinokio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style2.css">
+</head>
 
-      <div id="theme" hidden>
-        <div class="columns chose">
-        <div class="column">
-        </div>
-        <div class="column">
-          <div class="select">
-            <label class="label">Tema</label>
-        <select class="dropdown_chose" id="type" >
-          <option value="theme">Tema</option>
-          <option value="3D-modeling">3D Modelovanje</option>
-          <option value="programming">Programiranje</option>
-        </select>
-          </div>
-        </div>
-        <div class="column">
-        </div>
-      </div>
-      </div>
-      
-      <div id="game" hidden >
-        <div class="columns chose">
-        <div class="column">
-        </div>
-        <div class="column">
-          <div class="select">
-            <label class="label">Igrica</label>
-        <select class="dropdown_chose" id="type">
-          <option value="game1">igrica1</option>
-          <option value="game2">igrica2</option>
-          <option value="game3">igrica3</option>
-        </select>
-          </div>
-        </div>
-        <div class="column">
-        </div>
-      </div>
-      </div>
-      
+<body>
+  <nav class="navbar is-dark nav_color" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="index.html">
+        <img src="img/logo/pinokio-logo-text-desno.png" width="112" height="28">
+      </a>
 
-      <div class="columns">
-        <div class="column">
-        </div>
-        <div class="column">
-          <label class="label">Opis</label>
-          <textarea class="textarea" placeholder="Opis"></textarea>
-        </div>
-        <div class="column">
-        </div>
-      </div>
-
-      <div class="columns">
-        <div class="column">
-        </div>
-        <div class="column">
-          <button class="button is-dark">Napravi dogadjaj</button>
-        </div>
-        <div class="column">
-        </div>
-      </div>
-    </form>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
     </div>
-  </section>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a href="index.html" class="navbar-item">
+          Home
+        </a>
+
+        <a href="events.html" class="navbar-item">
+          Events
+        </a>
+
+        <div class="navbar-item is-dark has-dropdown is-hoverable ">
+          <a class="navbar-link">
+            Gamerooms
+          </a>
+
+          <div class="navbar-dropdown">
+          </div>
+        </div>
+      </div>
+
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="buttons">
+            <a href="sign_up.html" class="button is-dark">
+              <strong>Sign up</strong>
+            </a>
+            <a href="log_in.html" class="button is-dark">
+              Log in
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div>
+    <section class="section">
+      <div class="container">
+        <h1 class="title">
+          Napravi događaj
+        </h1>
+        <form>
+          <div class="columns">
+            <div class="column">
+            </div>
+            <div class="column">
+              <div class="field">
+                <label class="label">Naziv</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Naziv">
+                </div>
+              </div>
+            </div>
+            <div class="column">
+            </div>
+          </div>
+
+          <div class="columns chose">
+            <div class="column">
+            </div>
+            <div class="column">
+              <div class="control">
+                <label class="radio" style="margin-bottom: 20px;">
+                  <input type="radio" name="answer" id="radionica">
+                  Radionica
+                </label>
+                <label class="radio">
+                  <input type="radio" name="answer" id="takmicenje">
+                  Takmičenje
+                </label>
+              </div>
+              <div class="select">
+                <label class="label">Igraonica</label>
+                <select id="gameroomChoose">
+                </select>
+              </div>
+            </div>
+            <div class="column">
+            </div>
+          </div>
+
+          <div id="theme" hidden>
+            <div class="columns chose">
+              <div class="column">
+              </div>
+              <div class="column">
+                <div class="select">
+                  <label class="label">Tema</label>
+                  <select class="dropdown_chose" id="type">
+                    <option value="theme">Tema</option>
+                    <option value="3D-modeling">3D Modelovanje</option>
+                    <option value="programming">Programiranje</option>
+                  </select>
+                </div>
+              </div>
+              <div class="column">
+              </div>
+            </div>
+          </div>
+
+          <div id="game" hidden>
+            <div class="columns chose">
+              <div class="column">
+              </div>
+              <div class="column">
+                <div class="select">
+                  <label class="label">Igrica</label>
+                  <select class="dropdown_chose" id="type">
+                    <option value="game1">igrica1</option>
+                    <option value="game2">igrica2</option>
+                    <option value="game3">igrica3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="column">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="columns">
+            <div class="column">
+            </div>
+            <div class="column">
+              <label class="label">Opis</label>
+              <textarea class="textarea" placeholder="Opis"></textarea>
+            </div>
+            <div class="column">
+            </div>
+          </div>
+
+          <div class="columns">
+            <div class="column">
+            </div>
+            <div class="column">
+              <button class="button is-dark">Napravi dogadjaj</button>
+            </div>
+            <div class="column">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
   </div>
   <footer>
     <div>
@@ -181,45 +176,41 @@
         <a href="mailto:info@tmina.org">Contact</a>
       </nav>
     </div>
-</footer>
+  </footer>
   <script>
     var radionica = document.getElementById("Radionica");
     var takmicenje = document.getElementById("Takmicenje");
-    if (radionica.checked)
-    {
-        var div1 = document.getElementById("theme");
-        div1.style.display = "block";
-        var div2 = document.getElementById("game");
-        div2.style.display = "none";
+    if (radionica.checked) {
+      var div1 = document.getElementById("theme");
+      div1.style.display = "block";
+      var div2 = document.getElementById("game");
+      div2.style.display = "none";
     }
-    else if (takmicenje.checked)
-    {
-        var div1 = document.getElementById("game");
-        div1.style.display = "block";
-        var div2 = document.getElementById("theme");
-        div2.style.display = "none";
-        
+    else if (takmicenje.checked) {
+      var div1 = document.getElementById("game");
+      div1.style.display = "block";
+      var div2 = document.getElementById("theme");
+      div2.style.display = "none";
+
     }
-  const radionica = document.querySelector("#Radionica");
-  const rad = radionica.value;
-  if(radionica)
-  {
-        let div1 = document.getElementById("theme");
-        div1.removeAttribute('hidden');
-        let div2 = document.getElementById("game");
-        div1.setttribute('hidden');
-      }
-  else
-  {
+    const radionica = document.querySelector("#Radionica");
+    const rad = radionica.value;
+    if (radionica) {
+      let div1 = document.getElementById("theme");
+      div1.removeAttribute('hidden');
+      let div2 = document.getElementById("game");
+      div1.setttribute('hidden');
+    }
+    else {
       let div1 = document.getElementById("game");
       div1.removeAttribute('hidden');
-        let div2 = document.getElementById("theme");
-        div1.setttribute('hidden');
-  }
+      let div2 = document.getElementById("theme");
+      div1.setttribute('hidden');
+    }
   </script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-	<script src="js/createEvent.js"></script>
+  <script src="js/createEvent.js"></script>
   <script src="js/gamerooms.js"></script>
-  </body>
+</body>
 
 </html>

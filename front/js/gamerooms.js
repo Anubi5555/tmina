@@ -11,9 +11,13 @@ async function GetData() {
 
 function RenderNavbar(gamerooms) {
     const navbar = document.querySelector(".navbar-dropdown");
+    const gameroomChoose = document.querySelector("#gameroomChoose");
     let navbars = "";
+    let gameroomChooses = "";
     gamerooms.forEach((gameroom) => {
         navbars += `<a href="gameroom.html?id=${gameroom._id}" class="navbar-item">${gameroom.name}</a><br/>`;
+        gameroomChooses += `<option value="${gameroom.name}">${gameroom.name}</option>`
     });
     navbar.innerHTML = navbars;
+    gameroomChoose.innerHTML = gameroomChooses;
 }
