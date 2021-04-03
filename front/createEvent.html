@@ -203,15 +203,20 @@
   <script>
     var rad = document.getElementById("Radionica");
     var tak = document.getElementById("Takmicenje");
-    if (rad.checked)
+    if (rad)
     {
-        let div = document.getElementById("theme");
-        div.removeAttribute("hidden");
+        let div1 = document.getElementById("theme");
+        div1.removeAttribute("hidden");
+        let div2 = document.getElementById("game");
+        div2.addAttribute("hidden");
     }
-    if (tak.checked)
+    else
     {
-      let div = document.getElementById('game');
-        div.removeAttribute("hidden");
+        let div1 = document.getElementById("game");
+        div1.removeAttribute("hidden");
+        let div2 = document.getElementById("theme");
+        div2.addAttribute("hidden");
+        
     }
   </script>
   </body>
