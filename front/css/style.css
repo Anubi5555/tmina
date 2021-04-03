@@ -13,7 +13,6 @@ a{
 }
 a:hover{
 	color: #ececec;
-	transition: width 0.2s;
 	text-decoration: none;
 }
 html{
@@ -149,17 +148,16 @@ button:focus {
 	  height: 2px;
 	  background-color: #ceeb35;
 	  content: "";
-	  transition: width 0.2s;
 	}
 }
 @media (min-width:650px){
   .underlineHover:hover:after{
-   width: 100%;
+
    
   }
 }
 .underlineHover:hover:after{
-  width: 100%;
+
  
 }
 .Navigation_Bar_Border{
@@ -197,13 +195,13 @@ h2{
 	h1:hover{
 		color: #929292;
 		font-size: 48px;
-		transition:font-size 0.2s;
+		
 	}
 }
 @media (min-width:649px){
   h1:hover{
   	font-size: 48px;
-  	transition:font-size 0.5s;
+  	
   	}
 }
 p{
