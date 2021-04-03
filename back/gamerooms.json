@@ -49,7 +49,7 @@
             "phone": "021 6613407",
             "email": "info@kum.rs"
         },
-        "spec":{
+        "specs":{
             "cpu": "i5 8600",
             "gpu": "Nvidia GTX 1070 Ti",
             "ram": "16GB"
