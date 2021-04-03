@@ -67,9 +67,9 @@ async function login(username, password) {
 
   try {
     newUser = await axios.post("api/login", user);
-    window.location.href = "createEventOld.html";
   } catch (err) {
     console.log(err);
-    window.location.href = "createEvent.html";
   }
+
+  //window.location.href = "index.html";
 };

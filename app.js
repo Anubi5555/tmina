@@ -1,7 +1,5 @@
 const express = require("express");
 const passport = require("passport");
-const localStrategy = require("passport-local");
-const passportLocalMongoose = require("passport-local-mongoose");
 const app = express();
 const connectDB = require("./back/database");
 const gameroom = require("./back/gameroom");
@@ -25,7 +23,7 @@ app.use(require("express-session")({
 }));
 app.use(passport.initialize());
 app.use(passport.session());
-passport.use(new localStrategy(user.authenticate()));
+passport.use(user.createStrategy());
 passport.serializeUser(user.serializeUser());
 passport.deserializeUser(user.deserializeUser());
 
@@ -42,14 +40,14 @@ app.post("/api/register", async (req, res) => {
             username: username,
             role: role
         });
-        user.register(newUser, password, function(err, User){
-            if(err){
-                console.log(err);
-            }
-            passport.authenticate("local");
-        });
+
+        await newUser.setPassword(password);
+        await newUser.save();
+        const savedUser = await newUser.authenticate()(username, password);
+
         res.json({
-            success: true
+            success: true,
+            user: savedUser
         });
     } catch (err) {
         res.status(404).json({
@@ -59,12 +57,30 @@ app.post("/api/register", async (req, res) => {
     }
 });
 app.post("/api/login", passport.authenticate("local",{
-    successRedirect:"/ok.html",
-    failureRedirect:"/njtf.html"
+    successRedirect:"/index.html",
+    failureRedirect:"/log_in.html"
 }), async (req, res) => {
-    res.send("Cool");
+    res.send("User is ");
 });
-app.get("/api/logout", function(req, res){
+app.post("/api/login", async (req, res) => {
+    try {
+        const username = req.body.username;
+        const password = req.body.password;
+
+        const savedUser = await user.authenticate()(username, password);
+
+        res.json({
+            success: true,
+            user: savedUser
+        });
+    } catch (err) {
+        res.status(404).json({
+            success: false,
+            message: err.message
+        });
+    }
+});
+/*app.get("/api/logout", function(req, res){
     req.logout();
     res.redirect("/index.html");
 });
@@ -73,7 +89,7 @@ function isLoggedIn(req, res, next){
         return next();
     }
     res.redirect("/log_in.html");
-};
+};*/
 
 //gameroom functions
 app.get("/api/gamerooms", async (req, res) => {
