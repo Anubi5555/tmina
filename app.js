@@ -43,7 +43,7 @@ app.post("/api/register", async (req, res) => {
 
         await newUser.setPassword(password);
         await newUser.save();
-        const savedUser = await newUser.authenticate()(username, password);
+        const savedUser = await user.authenticate()(username, password);
 
         res.json({
             success: true,
