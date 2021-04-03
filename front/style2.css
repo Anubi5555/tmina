@@ -1,8 +1,28 @@
-html, body{
+/*html, body{
 background-color: rgb(4,4,4);
+
+}*/
+body{
+	background-image: url('http://i.stack.imgur.com/kx8MT.gif');
+    background-size: cover;
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+.dropdown_chose{
+	margin-tops: 1000px;
+}
+.label{
+	margin-bottom: 1000px;
+}
+select{
+	margin-top: 1000px;
 }
 nav{
 	background-color: rgb(85,85,85);
+}
+a{
+	color: red;
 }
 .desc{
 	color: #ccc;
@@ -46,6 +66,7 @@ select{
 
 	background-color: #ccc;
 }
+
 
 input::-moz-placeholder{
 	opacity: 1;
