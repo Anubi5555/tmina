@@ -14,7 +14,7 @@ nav{
 	background-color: rgb(85,85,85);
 }
 .label{
-	color: #ccc;
+	color: #a5a5a5;
 }
 .chose{
 	padding-bottom: 20px;
@@ -23,7 +23,7 @@ nav{
 
 }
 .desc{
-	color: #ccc;
+	color: #a5a5a5;
 	font-size: 20px;
 }
 .select_description{
@@ -33,11 +33,11 @@ nav{
 	background-color: rgb(85,85,85);
 }
 .title{
-	color: #ccc;
+	color: #a5a5a5;
 	text-align: center;
 }
 .subtitle{
-	color: #ccc;
+	color: #a5a5a5;
 }
 
 .input_box{
@@ -62,7 +62,7 @@ select{
 }
 .input, .select select, .textarea{
 
-	background-color: #ccc;
+	background-color: #a5a5a5;
 }
 
 .button{
@@ -74,5 +74,5 @@ input::-moz-placeholder{
 }
 .navbar.is-dark {
 background-color: #121212;
-color: #fff;
+color:#a5a5a5;
 }
