@@ -196,9 +196,9 @@ input[type=text]:placeholder {
   -moz-animation-fill-mode:forwards;
   animation-fill-mode:forwards;
 
-  -webkit-animation-duration:1.4s;
-  -moz-animation-duration:1.4s;
-  animation-duration:1.4s;
+  -webkit-animation-duration:1.2s;
+  -moz-animation-duration:1.2s;
+  animation-duration:1.2s;
 }
 
 .fadeIn.first {
@@ -220,19 +220,19 @@ input[type=text]:placeholder {
 }
 
 .fadeIn.fourth {
-  -webkit-animation-delay: 1s;
-  -moz-animation-delay: 1s;
-  animation-delay: 1s;
-}
-.fadeIn.fifth {
   -webkit-animation-delay: 1.2s;
   -moz-animation-delay: 1.2s;
   animation-delay: 1.2s;
 }
+.fadeIn.fifth {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
 .fadeIn.sixth {
-  -webkit-animation-delay: 1.4s;
-  -moz-animation-delay: 1.4s;
-  animation-delay: 1.4;
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1;
 }
 /* Simple CSS3 Fade-in Animation */
 .underlineHover:after {
@@ -335,3 +335,6 @@ footer a:hover {
 }
 
 /* ======== End Footer ======== */
+.clr {
+  color: #fff;
+}
