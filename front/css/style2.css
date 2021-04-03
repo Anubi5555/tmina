@@ -22,9 +22,6 @@ nav{
 	
 
 }
-.label{
-	
-}
 .desc{
 	color: #ccc;
 	font-size: 20px;
@@ -49,7 +46,7 @@ nav{
 	margin-bottom:20px;
 	
 }
-.input_text:{
+.input_text{
 	align-content: center;
 	align-self: center;
 	width: 500px;
