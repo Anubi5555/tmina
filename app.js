@@ -77,9 +77,9 @@ app.post("/api/login", async (req, res) => {
         });
     }
 });
-app.get("/check-session", (req,res,next) => {
+app.get("/api/getUser", (req,res,next) => {
     console.log.apply(req.session);
-    res.json({user: req.session.user});
+    res.json({username: req.session.user.username});
 });
 /*app.get("/api/logout", function(req, res){
     req.logout();
@@ -156,8 +156,10 @@ app.get("/api/event", async (req, res) => {
 app.post("/api/events", async (req, res) => {
     try {
         const name = req.body.name;
+        //const organizer = req.body.organizer;
         const type = req.body.type;
         const gameroom = req.body.gameroom;
+        //const attendees = req.body.attendees;
         const desc = req.body.desc;
 
         const newEvent = new event({
