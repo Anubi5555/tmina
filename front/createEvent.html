@@ -73,7 +73,7 @@
     </div>
   </div>
 </nav>
-<div style="background-image: url('img/background.png');width: 100%;">
+<div >
   <section class="section">
     <div class="container">
       <h1 class="title" >
@@ -201,9 +201,9 @@
     </div>
 </footer>
   <script>
-    var rad = document.getElementById("Radionica");
-    var tak = document.getElementById("Takmicenje");
-    if (rad)
+    var radionica = document.getElementById("Radionica");
+    var takmicenje = document.getElementById("Takmicenje");
+    if (radionica)
     {
         let div1 = document.getElementById("theme");
         div1.removeAttribute("hidden");
@@ -219,6 +219,9 @@
         
     }
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+	<script src="js/createEvent.js"></script>
+  <script src="js/gamerooms.js"></script>
   </body>
 
 </html>
