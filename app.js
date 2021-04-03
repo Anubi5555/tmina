@@ -35,14 +35,14 @@ app.post("/api/register", async (req, res) => {
         const password = req.body.password;
         const role = req.body.role;
 
-        const newUser = new user({
+        const User = new user({
             email: email,
             username: username,
             role: role
         });
 
-        await newUser.setPassword(password);
-        await newUser.save();
+        await User.setPassword(password);
+        await User.save();
         const savedUser = await user.authenticate()(username, password);
 
         res.json({
@@ -61,11 +61,11 @@ app.post("/api/login", async (req, res) => {
         const username = req.body.username;
         const password = req.body.password;
 
-        const savedUser = await user.authenticate()(username, password);
+        const User = await user.authenticate()(username, password);
 
         res.json({
             success: true,
-            user: savedUser
+            user: User
         });
     } catch (err) {
         res.status(404).json({
