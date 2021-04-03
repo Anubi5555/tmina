@@ -39,11 +39,8 @@ function CreateCard(event) {
     let card = `
       <div event-id=${event._id} data-role="tile" id="tile" data-size="large"  style="background-color:#242526; border-color: #242526;">
         <h2 style="font-size: 20 px;">${event.name}</h2>
-        <button class="button is-info is-light">Info</button>
-        <div style="lefy: 5px; right:5px;">
             <button class="delete"></button>
-            <button class="fas fa-info-circle"></button>
-        </div>
+            <button class="fa-info-circle"></button>
       </div>`;
 
     return card;
