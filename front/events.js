@@ -41,6 +41,7 @@ function CreateCard(event) {
         <h2>${event.name}</h2>
         <button class="button is-info is-light">Info</button>
         <button class="delete"></button>
+        <button class="fas fa-info-circle"></button>
       </div>`;
 
     return card;
