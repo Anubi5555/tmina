@@ -75,3 +75,7 @@ input::-moz-placeholder{
 	opacity: 1;
 	color: #fff;
 }
+.navbar.is-dark {
+background-color: #121212;
+color: #fff;
+}
