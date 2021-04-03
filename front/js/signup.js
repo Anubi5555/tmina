@@ -11,7 +11,7 @@ $(document).ready(function(){
   }
 
   function validatePassword(password) {
-    const re = new RegExp('([a-zA-Z]*[1-9]*[a-zA-Z]*){6,18}');
+    const re = new RegExp('([a-zA-Z]+[1-9]*[a-zA-Z]*){6,18}');
     return re.test(password);
   }
 
@@ -62,6 +62,7 @@ $(document).ready(function(){
       passwordError.classList.add("hidden");
       passwordError.setAttribute("aria-hidden", true);
       passwordError.setAttribute("aria-invalid", false);
+      valid=false;
     } else {
       passwordError.classList.remove("hidden");
       passwordError.classList.add("visible");
