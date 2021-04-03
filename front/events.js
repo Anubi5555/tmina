@@ -11,14 +11,14 @@ async function GetData() {
 }
 
 function AddEventListeners() {
-    let moreInfoBtn = [...document.querySelectorAll(".info-button")];
+    let moreInfoBtn = [...document.querySelectorAll(".is-info")];
     moreInfoBtn.forEach((btn) =>
         btn.addEventListener("click", () => {
             window.location.href = `event.html?id=${getId(btn)}`;
         })
     );
 
-    let deleteBtns = [...document.querySelectorAll(".delete-button")];
+    let deleteBtns = [...document.querySelectorAll(".delete")];
     deleteBtns.forEach((btn) =>
         btn.addEventListener("click", () => DeleteData(btn))
     );
@@ -39,7 +39,7 @@ function CreateCard(event) {
     let card = `
       <div event-id=${event._id} data-role="tile" id="tile" data-size="large"  style="background-color:#242526; border-color: #242526;">
         <h2>${event.name}</h2>
-        <button class="info-button" style="color: #90EE90;"><h2 class="go">alooooo</h2></button>
+        <button class="button is-info is-light">Info</button>
         <button class="delete"></button>
       </div>`;
 
