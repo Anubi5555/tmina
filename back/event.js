@@ -7,23 +7,11 @@ var eventSchema = new mongoose.Schema({
         unique: true
     },
     info: {
-        organizer: {
-            type: String,
-            required: true
-        },
-        gameroom: {
-            type: String,
-            required: true
-        },
-        game: {
-            type: String,
-            required: true
-        },
+        organizer: String,
+        gameroom: String,
+        game: String,
         price: String,
-        attendees: {
-            type: String,
-            required: true
-        },
+        attendees: String,
         prize: String
     },
     desc: String,

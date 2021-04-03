@@ -8,17 +8,18 @@ const gameroom = require("./back/gameroom");
 const event = require("./back/event");
 const user = require("./back/user");
 
+//start server
 const port = 3000;
-
 app.listen(port, () => {
-    console.log("Listening on port: ${port}");
+    console.log("Listening on port: " + port);
 });
 
+//connect database and setup app
 connectDB();
 app.use(express.json());
 app.use(express.static("front"));
 app.use(require("express-session")({
-    secret: "Rusty is the best og in the world",
+    secret: "Destruktor je prosao i ostavio samo tminu",
     resave: false,
     saveUninitialized: false
 }));
@@ -27,6 +28,57 @@ app.use(passport.session());
 passport.use(new localStrategy(user.authenticate()));
 passport.serializeUser(user.serializeUser());
 passport.deserializeUser(user.deserializeUser());
+
+//login and register functions
+/* app.post("/api/register", function(req, res){
+    user.register(new user({email:req.body.email,username:req.body.username,role:req.body.role}),req.body.password, function(err, user){
+           if(err){
+                console.log(err);
+            }
+            passport.authenticate("local")(req, res, function(){
+                res.redirect("/secret");
+           }); 
+        });
+    }); */
+app.post("/api/register", async (req, res) => {
+    try {
+        const email = req.body.email;
+        const username = req.body.username;
+        const password = req.body.password;
+
+        const newUser = new user({
+            email: email,
+            username: username,
+            password: password
+        });
+        const savedUser = await newUser.save();
+        res.json({
+            success: true,
+            user: savedUser
+        });
+    } catch (err) {
+        res.status(404).json({
+            success: false,
+            message: err.message
+        });
+    }
+});
+/*app.post("/api/login", passport.authenticate("local",{
+    successRedirect:"/index.html",
+    failureRedirect:"/login.html"
+}),function(req, res){
+    res.send("User is "+ req.user.id);
+});
+app.get("/api/logout", function(req, res){
+    req.logout();
+    res.redirect("/index.html");
+});
+function isLoggedIn(req, res, next){
+    if(req.isAuthenticated()){
+        return next();
+    }
+    res.redirect("/login.html");
+};*/
 
 //gameroom functions
 app.get("/api/gamerooms", async (req, res) => {

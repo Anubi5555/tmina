@@ -29,12 +29,13 @@ $(document).ready(function(){
     const con_passwordError = document.getElementById("con_passwordError");
 
 
+    let valid=true;
+
     if (validateEmail(email)) {
       emailError.classList.remove("visible");
       emailError.classList.add("hidden");
       emailError.setAttribute("aria-hidden", true);
       emailError.setAttribute("aria-invalid", false);
-      valid=true;
     } else {
       emailError.classList.remove("hidden");
       emailError.classList.add("visible");
@@ -48,7 +49,6 @@ $(document).ready(function(){
       usernameError.classList.add("hidden");
       usernameError.setAttribute("aria-hidden", true);
       usernameError.setAttribute("aria-invalid", false);
-      valid=true;
     } else {
       usernameError.classList.remove("hidden");
       usernameError.classList.add("visible");
@@ -62,7 +62,6 @@ $(document).ready(function(){
       passwordError.classList.add("hidden");
       passwordError.setAttribute("aria-hidden", true);
       passwordError.setAttribute("aria-invalid", false);
-      valid=true;
     } else {
       passwordError.classList.remove("hidden");
       passwordError.classList.add("visible");
@@ -76,7 +75,6 @@ $(document).ready(function(){
       con_passwordError.classList.add("hidden");
       con_passwordError.setAttribute("aria-hidden", true);
       con_passwordError.setAttribute("aria-invalid", false);
-      valid=true;
     } else { 
       con_passwordError.classList.add("visible");
       con_passwordError.classList.add("invalid");
@@ -84,15 +82,38 @@ $(document).ready(function(){
       con_passwordError.setAttribute("aria-invalid", true);
       valid=false;
     }
-
-
-    return false;
+    if (valid) {
+      GetInput();
+      return true;
+    }
+    else
+      return false;
   }
-
   $("#submit").on("click", validate);
-
-
 });
 
+async function GetInput() {
+  const emailInput = document.querySelector("#email");
+  const usernameInput = document.querySelector("#username");
+  const passwordInput = document.querySelector("#password");
 
+  const email = emailInput.value;
+  const username = usernameInput.value;
+  const password = passwordInput.value;
 
+  let user = {
+      email: email,
+      username: username,
+      password: password
+  };
+
+  let newUser;
+
+  try {
+    newUser = await axios.post("api/register", user);
+    window.location.href = "USPEH.html";
+  } catch (err) {
+      console.log(err);
+      window.location.href = "index.html";
+  }
+}

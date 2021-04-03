@@ -12,14 +12,8 @@ var userSchema = new mongoose.Schema({
         required: true,
         unique: true
     },
-    password: {
-        type: String,
-        required: true
-    },
-    role: {
-        type: String,
-        required: true
-    },
+    password: String,
+    role: String,
     createdAt: Date,
     updatedAt: Date
 }, { collection: "users" });
