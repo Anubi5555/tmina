@@ -41,7 +41,7 @@ function CreateCard(event) {
       <div event-id=${event._id} data-role="tile" id="tile" data-size="large"  style="background-color:#242526; border-color: #242526;">
         <h2>${event.name}</h2>
         <button class="info-button" style="color: #90EE90;"><h2 class="go">alooooo</h2></button>
-        <button class="delete"></button>
+
       </div>`;
 
     return card;
