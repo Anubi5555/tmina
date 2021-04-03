@@ -13,7 +13,9 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css"/>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+	  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
   	<title>ETmina ESports Homapege</title>
 </head>
@@ -35,21 +37,17 @@
       </div>
     </header>
     
-	<section>
-		<h1>Dobrodošli!</h1>
-		<div class="card-margin">
-			<div class="dark-background card-design home-page-card" >
-				<h2>ETmina ESport</h2><p> omogućava brzo i lako prijavljivanje na različite e-sport događaje u novosadskim igraonicama, takmičenja organizovana od strane igraonica ili raznovrsne korisničke događaje. Dostupne su i sve potrebne informacije o novosadskim igraonicama</p>
-		  		<h2>Uživajte u igri!</h2>
-			</div>
-		</div>
-	</section>
 
-	<section>
-		<div id="slider" class="container">
-		</div>
-	</section>
 	
+	<div class="carousel"
+	data-flickity='{ "wrapAround": true }'>
+	<div class="carousel-cell"></div>
+	<div class="carousel-cell"></div>
+	<div class="carousel-cell"></div>
+	<div class="carousel-cell"></div>
+	<div class="carousel-cell"></div>
+  </div>
+
 	<footer>
 		<div>
 			<nav class="footer-nav">
