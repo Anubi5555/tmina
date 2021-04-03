@@ -56,12 +56,6 @@ app.post("/api/register", async (req, res) => {
         });
     }
 });
-app.post("/api/login", passport.authenticate("local",{
-    successRedirect:"/index.html",
-    failureRedirect:"/log_in.html"
-}), async (req, res) => {
-    res.send("User is ");
-});
 app.post("/api/login", async (req, res) => {
     try {
         const username = req.body.username;
