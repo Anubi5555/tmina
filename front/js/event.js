@@ -20,10 +20,10 @@ async function GetData() {
 
 function RenderInfo(event) {
     const name = document.querySelector("#name");
-    name.innerHTML = `<td><p style="margin-left: 60%;"><b>${event.name}</b></p></td><td></td>`;
+    name.innerHTML = `<td><p style="margin-left: 100%;"><b>${event.name}</b></p></td><td></td>`;
 
-    const organizator = document.querySelector("#organizer");
-    organizator.innerHTML = `<td><p>Organizator:</p></td><td><p>${event.organizer}</p></td>`;
+    /* const organizator = document.querySelector("#organizer");
+    organizator.innerHTML = `<td><p>Organizator:</p></td><td><p>${event.organizer}</p></td>`; */
 
     const type = document.querySelector("#type");
     type.innerHTML = `<td><p>Igra:</p></td><td><p>${event.type}</p></td>`;
@@ -35,7 +35,7 @@ function RenderInfo(event) {
     attendees.innerHTML = `<td><p>Broj ucesnika:</p></td><td><p>${event.info.attendees}</p></td>`; */
 
     const desc = document.querySelector("#desc");
-    desc.innerHTML = `<p style="text-align: center;">${event.desc}</p>`;
+    desc.innerHTML = `<td><p>Opis:</p></td><td><p>${event.desc}</p></td>`;
 }
 
 async function DeleteData(id) {
