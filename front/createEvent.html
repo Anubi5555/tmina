@@ -101,9 +101,9 @@
           <div class="select">
             <label class="label">Vrsta</label>
         <select class="dropdown_chose" id="type">
-          <option  id="0" value="Vrsta">Vrsta</option>
-          <option  id="1" value="takmicenje">takmičenje</option>
-          <option  id="2" value="radionica">radionica</option>
+          <option  id="vrsta" value="Vrsta">Vrsta</option>
+          <option  id="takmicenje" value="takmicenje">takmičenje</option>
+          <option  id="radionica" value="radionica">radionica</option>
         </select>
           </div>
         
@@ -187,22 +187,25 @@
     </div>
   </section>
   <script>
-    document.getElementById("0").selected = true;
-    if (document.getElementById("0").selected == true)
+    const vrsta = $("#vrsta").val();
+    const takmicenje = $("#takmicenje").val();
+    const radionica = $("#radionica").val();
+    vrsta.setAttribute("selected", true);
+    if (vrsta.getAttribute("selected") == true)
     {
         let div = document.getElementById("theme");
         div.addAttribute("hidden");
         let div = document.getElementById("game");
         div.addAttribute("hidden");
     }
-    if (document.getElementById("1").selected == true)
+    if (takmicenje.getAttribute("selected") == true)
     {
         let div = document.getElementById("theme");
         div.removeAttribute("hidden");
     }
-    if (document.getElementById("2").selected == true)
+    if (radionica.getAttribute("selected") == true)
     {
-      let div = document.getElementById('game');
+        let div = document.getElementById('game');
         div.removeAttribute("hidden");
     }
   </script>
