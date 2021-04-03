@@ -10,9 +10,7 @@ body{
     margin:0;
 }
 
-nav{
-	background-color: rgb(85,85,85);
-}
+
 .label{
 	color: #a5a5a5;
 }
@@ -75,4 +73,27 @@ input::-moz-placeholder{
 .navbar.is-dark {
 background-color: #121212;
 color:#a5a5a5;
+}
+footer {
+	background-color: #121212;
+  height: 110px;
+	padding: 30px;
+	margin-top: 60px;
+	font-size: 12px;
+	text-align: center;
+	}
+footer a {
+	text-decoration: none;
+	color: #a5a5a5;;
+}
+footer a:hover {
+	text-decoration: none;
+	color: #ccc;
+}
+.footer-nav {
+	padding-top: 20px;
+}
+.footer-nav a {
+	color: #a5a5a5;
+	font-size: 14px;
 }
