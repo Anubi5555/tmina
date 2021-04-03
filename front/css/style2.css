@@ -13,9 +13,7 @@ body{
 nav{
 	background-color: rgb(85,85,85);
 }
-a{
-	color: red;
-}
+
 .chose{
 	padding-bottom: 20px;
 	padding-top: 20px;
@@ -44,7 +42,7 @@ a{
 .input_box{
 	background-color: rgb(85,85,85);
 	border-color: rgb(85,85,85);
-	margin-bottom:30px;
+	margin-bottom:20px;
 	
 }
 .input_text:{
@@ -66,7 +64,9 @@ select{
 	background-color: #ccc;
 }
 
-
+.button{
+	margin-top: 20px;
+}
 input::-moz-placeholder{
 	opacity: 1;
 	color: #fff;
