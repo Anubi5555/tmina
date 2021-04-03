@@ -7,7 +7,14 @@
   .hidden{
     visibility: hidden;
   }
-
+  a{
+    color: #cccccc;
+    text-decoration:none;
+  }
+  a:hover{
+      color: #ececec;
+      text-decoration: none;
+  }
   html{
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale
@@ -184,19 +191,7 @@
       font-family: 'Play', sans-serif;
       font-size: 24px;
   }
-  @media (max-width:650px){
-      h1:hover{
-          color: #929292;
-          font-size: 48px;
-          
-      }
-  }
-  @media (min-width:649px){
-    h1:hover{
-        font-size: 48px;
-        
-        }
-  }
+
   p{
       font-size: 18px;
       color: #ccc;	
