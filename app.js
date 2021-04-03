@@ -19,7 +19,8 @@ app.use(express.static("front"));
 app.use(require("express-session")({
     secret: "Destruktor je prosao i ostavio samo tminu",
     resave: false,
-    saveUninitialized: false
+    saveUninitialized: false,
+    cookie: { secure: true }
 }));
 app.use(passport.initialize());
 app.use(passport.session());
