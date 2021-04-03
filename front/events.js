@@ -38,30 +38,16 @@ function CreateCard(event) {
 
     let card = `
     
-    <div class="row">
-    <div class="col s12 m7">
-      <div class="card">
-        <div class="card-image">
-          
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-         <h1 class="title">${event.name}</h1>
-          <p>Opis</p>
-        </div>
-        <div class="card-action">
-          <button class="button info-button is-info is-focused">Info</button>
-
-        <button class="button delete-button is-danger is-outlined" style="margin-left:50%;">
+    <div event-id=${event._id} data-role="tile" id="tile" data-size="large"  style="background-color:#242526; border-color: #242526;">
+        <h1 class="title">${event.name}</h1>
+        <button class="button info-button is-info is-focused">Info</button>
+        <button class="button delete-button is-danger is-outlined">
             <span>Delete</span>
             <span class="icon is-small">
             <i class="fas fa-times"></i>
             </span>
         </button>
-        </div>
-      </div>
-    </div>
-  </div>`;
+      </div>`;
 
     return card;
 }
