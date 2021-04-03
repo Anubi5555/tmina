@@ -156,19 +156,16 @@ app.get("/api/event", async (req, res) => {
 app.post("/api/events", async (req, res) => {
     try {
         const name = req.body.name;
-        const info = req.body.info;
+        const type = req.body.type;
+        const gameroom = req.body.gameroom;
         const desc = req.body.desc;
 
         const newEvent = new event({
             name: name,
-            info: {
-                organizer: info.organizer,
-                gameroom: info.gameroom,
-                game: info.game,
-                price: info.price,
-                attendees: info.attendees,
-                prize: info.prize
-            },
+            //organizer: organizer,
+            type: type,
+            gameroom: gameroom,
+            //attendees: attendees,
             desc: desc
         });
         const savedEvent = await newEvent.save();
